@@ -106,6 +106,39 @@ Flow Chat is a full-stack chat application based on Next.js featuring real-time 
 
 https://github.com/aritroCoder/Snaptos/assets/95216822/aef48482-29df-4ceb-9dd1-dfdb8b6608ea
 
+## Deployment on Vercel
+
+### 1. Configure Environment Variables
+
+Before deploying, make sure you set the required environment variables:
+
+1. Go to your Vercel project dashboard.
+2. Navigate to the **"Settings"** tab and click on **"Environment Variables"**.
+3. Add the following variables:
+   
+    ```bash
+    CLERK_PUBLISHABLE_KEY=<your-clerk-publishable-key>
+    CLERK_SECRET_KEY=<your-clerk-secret-key>
+    STREAM_API_KEY=<your-stream-api-key>
+    STREAM_APP_ID=<your-stream-app-id>
+    STREAM_TOKEN_SECRET=<your-stream-token-secret>
+    ```
+
+### 2. Deploy Your Project
+
+1. After selecting your project, Vercel should automatically detect that it's a **Next.js** app.
+2. Click on **"Deploy"** and wait for the build process to complete.
+
+Once the deployment is successful, Vercel will provide you with a live URL for your project.
+
+### 3. Update Webhook URLs
+
+If you're using webhooks (e.g., from Clerk or Stream), make sure to update your webhook URLs with the newly provided Vercel domain. For example:
+
+```bash
+https://your-vercel-app.vercel.app/api/webhook
+```
+
 ## Authors
 This project has been made for Imbesideyou by Priyanshi Sharma from IIT Patna. 
 
