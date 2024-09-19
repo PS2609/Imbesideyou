@@ -1,4 +1,4 @@
-# Snaptos Wallet
+# Flow ChatApp 
 
 ![Flow ChatApp Cover](https://www.notion.so/DOCUMENTATION-102b31e92a79808a830bc39636d95024?pvs=4#7563d4fb4eaa4eb1a93d585afa41edc5)
 
@@ -14,7 +14,7 @@ Flow Chat is a full-stack chat application based on Next.js featuring real-time 
 3. **Light and Dark Mode**  
    - Users can switch between light and dark themes to suit their visual preferences.
      
-5. **Single & Group Chat feature** :
+5. **Single & Group Chat feature** 
    -It allows you to interact with single and multiple users in real-time.
      
 4. **User Authentication with Clerk**  
@@ -41,43 +41,42 @@ Flow Chat is a full-stack chat application based on Next.js featuring real-time 
 
 1. **Clone the Repository.**
 2. **Install Dependencies:**
-   ```bash
-   yarn install
+   ```npm install
    ```
-3. **Start the Server:**
-   ```bash
-   cd server
-   yarn install
-   yarn start
-   ```
-4. **Return to the Root Directory:**
-   ```bash
-   cd ..
-   ```
-5. **Start the Forecasting Engine**
+## ⚙️ Configuration
 
-   Make sure you have Docker installed. If not, please follow the instructions [here](https://docs.docker.com/get-docker/).
-   ```bash
-   cd forecaster
-   cd bin
-   chmod +x deploy.sh
-   ./deploy.sh up
-   ```
-5. **Start the Application**
-   ```bash
-   cd ..
-   yarn start
-   ```
+1. **Set Up Environment Variables:**
+    - Create a `.env.local` file in the project root.
+    - Add your Clerk API keys:
+    ```bash
+    CLERK_PUBLISHABLE_KEY=<your-publishable-key>
+    CLERK_SECRET_KEY=<your-secret-key>
+    ```
+    - Add your Stream Chat project credentials:
+    ```bash
+    STREAM_API_KEY=<your-stream-api-key>
+    STREAM_APP_ID=<your-stream-app-id>
+    STREAM_TOKEN_SECRET=<your-stream-token-secret>
+    ```
 
-Congratulations! You are now ready to experience the power of Snaptos. Access your Aptos assets, leverage advanced features, and enjoy a streamlined user experience right within the Metamask Snap.
+## 🚀 Running the Project
 
-## Notations
+1. **Start the Development Server:**
 
-- **Gas Estimation:** Our sophisticated algorithm analyzes the current network conditions to provide accurate gas estimates, ensuring optimal transaction execution.
+    In the terminal, run:
+    ```bash
+    npm run dev
+    ```
 
-- **Real-time APT to USD Conversion:** The conversion rates are sourced from reputable APIs, offering users a reliable and up-to-date valuation of their Aptos holdings.
+2. **Access the Application:** 
 
-- **On-chain Account Creation:** Behind the scenes, Aptos Wallet leverages smart contract interactions to securely and efficiently create Aptos accounts directly on-chain.
+    Open your browser and navigate to:
+    ```bash
+    http://localhost:3000
+    ```
+
+    Your development environment should now be up and running!
+
 
 ## Solution Architecture
 ![Snaptos Architecture](./assets/APTOS_architecture.png)
