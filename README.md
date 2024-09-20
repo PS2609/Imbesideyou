@@ -1,8 +1,12 @@
 # Flow ChatApp 
 
-![Flow ChatApp Cover](https://www.notion.so/DOCUMENTATION-102b31e92a79808a830bc39636d95024?pvs=4#7563d4fb4eaa4eb1a93d585afa41edc5)
+![Flow ChatApp Cover](public/interface.png)
 
 Flow Chat is a full-stack chat application based on Next.js featuring real-time messaging and responsive design. It requires a low latency architecture so that the recipients may get the messages from the sender, instantly.
+
+## Demo Video 
+https://drive.google.com/file/d/1-N0vOtsyFSjCPOTbB7G3FJ-MltJJeI5-/view?usp=sharing
+
 ## Features
 
 1. **Real-Time Messaging**  
@@ -45,7 +49,7 @@ Flow Chat is a full-stack chat application based on Next.js featuring real-time 
    ```bash
    npm install
    ```
-## ⚙️ Configuration
+## Configuration
 
 1. **Set Up Environment Variables:**
     - Create a `.env.local` file in the project root.
@@ -63,7 +67,7 @@ Flow Chat is a full-stack chat application based on Next.js featuring real-time 
     STREAM_TOKEN_SECRET=<your-stream-token-secret>
     ```
 
-## 🚀 Running the Project
+##  Running the Project
 
 1. **Start the Development Server:**
 
@@ -81,7 +85,56 @@ Flow Chat is a full-stack chat application based on Next.js featuring real-time 
 
     Your development environment should now be up and running!
 
-## 💻 Tech Stack I Used & Why?
+## ChatBot
+
+Install Python : https://www.python.org/downloads/
+
+Install pip
+
+```
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+```
+
+```
+python3 get-pip.py
+```
+
+Ensure pip is installed by running the following command
+
+```
+pip --version
+```
+
+If you have Python & pip installed then check their version in the terminal or command line tools
+
+```
+python3 --version
+```
+
+```
+pip --version
+```
+
+## Installing Flask
+
+In your terminal run the requirements.txt file using this pip
+
+```
+pip install -r requirements.txt
+```
+
+## Running ChatBot Application in Terminal
+
+```
+cd into your directory
+```
+
+```
+python3 app.py
+```
+
+
+##  Tech Stack I Used & Why?
 
 ### **Frontend:**
 - **Next.js:** Provides a framework for server-rendered React applications, enhancing performance and SEO, with built-in routing and API routes.
@@ -97,14 +150,17 @@ Flow Chat is a full-stack chat application based on Next.js featuring real-time 
 ### **Chatbot:**
 - **DialoGPT-medium:** A pre-trained language model used for generating human-like responses, making interactions more natural and engaging.
 
+## User Flow
 
+![User Flow](public/userflow.png)
+
+## Documentation
+
+https://functional-value-95a.notion.site/DOCUMENTATION-102b31e92a79808a830bc39636d95024
 
 ## Solution Architecture
 
-
-## Demo
-
-https://github.com/aritroCoder/Snaptos/assets/95216822/aef48482-29df-4ceb-9dd1-dfdb8b6608ea
+![System Architecture](public/image.png)
 
 ## Deployment on Vercel
 
@@ -131,14 +187,8 @@ Before deploying, make sure you set the required environment variables:
 
 Once the deployment is successful, Vercel will provide you with a live URL for your project.
 
-### 3. Update Webhook URLs
-
-If you're using webhooks (e.g., from Clerk or Stream), make sure to update your webhook URLs with the newly provided Vercel domain. For example:
-
-```bash
-https://your-vercel-app.vercel.app/api/webhook
-```
-
-## Authors
-This project has been made for Imbesideyou by Priyanshi Sharma from IIT Patna. 
-
+## Author
+Name - Priyanshi Sharma , 
+Branch - Mechanical Engineering , 
+Campus - IIT Patna , 
+Role - Software Engineer
