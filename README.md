@@ -4,6 +4,9 @@
 
 Flow Chat is a full-stack chat application based on Next.js featuring real-time messaging and responsive design. It requires a low latency architecture so that the recipients may get the messages from the sender, instantly.
 
+## Documentation
+
+https://functional-value-95a.notion.site/DOCUMENTATION-102b31e92a79808a830bc39636d95024
 ## Demo Video 
 https://drive.google.com/file/d/1-N0vOtsyFSjCPOTbB7G3FJ-MltJJeI5-/view?usp=sharing
 
@@ -153,10 +156,6 @@ python3 app.py
 ## User Flow
 
 ![User Flow](public/userflow.png)
-
-## Documentation
-
-https://functional-value-95a.notion.site/DOCUMENTATION-102b31e92a79808a830bc39636d95024
 
 ## Solution Architecture
 
